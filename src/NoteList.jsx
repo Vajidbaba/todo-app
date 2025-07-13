@@ -119,8 +119,6 @@ const NoteList = ({ notes, onDeleteOrUpdate }) => {
           </ul>
         )}
       </div>
-
-      {/* 🔴 Delete Confirmation Modal */}
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center z-50"  style={{ background: "#00000038" }}>
           <div className="bg-white rounded-lg p-6 shadow-lg max-w-sm w-full space-y-4 text-center">

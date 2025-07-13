@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+      <link href="/dist/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+
+  <body class="bg-gray-100">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="w-64 bg-white shadow-lg px-4 py-6 hidden md:block">
+      <h2 class="text-2xl font-bold mb-6 text-blue-600">Dashboard</h2>
+      <ul class="space-y-4">
+        <li><a href="#" class="block text-gray-700 hover:text-blue-600">Home</a></li>
+        <li><a href="#" class="block text-gray-700 hover:text-blue-600">Profile</a></li>
+        <li><a href="#" class="block text-gray-700 hover:text-blue-600">Settings</a></li>
+        <li><a href="#" class="block text-gray-700 hover:text-blue-600">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="flex-1 flex flex-col">
+      <!-- Top Navbar -->
+      <header class="text-white shadow px-6 py-4 flex justify-between items-center bg-blue-600">
+        <div class="text-lg font-semibold">Todo List</div>
+        <button class="md:hidden text-gray-700">
+          <!-- Mobile toggle icon -->
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </header>
+
+      <!-- Page Content -->
+      <main class="p-2 overflow-auto">
+       <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
